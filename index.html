@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>🍰 Dulcesd'lissa: Links</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Acceso rápido a todos los enlaces de interes de 🍰 Dulcesd'lissa" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://dulcesdlissa.vercel.app" />
+    <meta property="og:title" content="🍰 Dulcesd'lissa: Links" />
+    <meta property="og:description" content="Acceso rápido a todos los enlaces de interes de 🍰 Dulcesd'lissa" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preload" href="./images/bg01.jpg" as="image" />
+    <script src="./utils/three.min.js"></script>
+    <script src="./utils/vanta.birds.min.js"></script>
+    <script type="module">
+    import { supportWebGL } from "./utils/support-webgl.js"
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const support = supportWebGL()
+
+      support &&
+        VANTA.BIRDS({
+          el: "#vanta",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: true,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          scaleMobile: 1.00,
+          backgroundAlpha: 0.0,
+          color2: 0xff00f0,
+          wingSpan: 40.00,
+          separation: 100.00,
+          alignment: 77.00,
+          cohesion: 5.00,
+          quantity: 1.00
+        })
+        
+      setTimeout(() => {
+        const main = document.querySelector('main')
+        main.style.opacity = 1
+        main.style.filter = 'blur(0px)'
+      }, 1000)
+    })
+    </script>
+  </head>
+  <body>
+    <source media="(max-width: 500px)" src="./videos/3.mp4" type="video/mp4">
+
+    <div id="vanta"></div>
+    <main class="animated">
+      <header>
+        <img src="./images/logo.jpg" />
+        <h1>@dulcesdlissa</h1>
+      </header>
+      <ul>
+        <li>
+          <a href="https://api.whatsapp.com/send?phone=584244182344&text=%C2%A1Hola!,%20me%20encantaria%20hacer%20un%20pedido,%20me%20llamo:%20,%20y%20lo%20que%20quiero%20pedir%20es:">
+            <img src="./images/whatsapp-icon.svg" alt="Whatsapp Icon" width="25" />
+            Whatsapp
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/instagram-icon.svg" alt="Instagram Icon" width="25" />
+            Instagram
+          </a>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
